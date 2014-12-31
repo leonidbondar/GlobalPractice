@@ -1,9 +1,10 @@
 
 public class TestCaseForAddPositonsBonusTest extends User {
-	public static void registerStructure() throws Exception {
-		
+	public static void registerStructure(String sponsorLogin, String userLogin) throws Exception {
+		/*
 		String sponsorLogin = new String("12345underadminl");
 		String userLogin = new String("underunderadminls");
+		*/
 		
 		int packageButtonNumber = 4;
 		int numberOfProfileGlobalStructureSettingsButton = 1;

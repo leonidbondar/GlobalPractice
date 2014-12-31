@@ -26,15 +26,18 @@ public class TestDrive {
 
 	@Test
 	public void test() throws Exception {
-		//TestCaseForAddPositonsBonusTest.registerStructure();
-		ClosePeriod.closePeriods();
 		/*
-		String sponsorLogin = new String("12345underadminl");
-		String userLogin = new String("underunderadminls");
+		String sponsorLogin = new String("12345newunderadmin");
+		String userLogin = new String("newunderunderadmin");
+		
+		TestCaseForAddPositonsBonusTest.registerStructure(sponsorLogin, userLogin);
 		*/
+		ClosePeriod.closePeriods();
+		
 		/*
 		String sponsorLogin = new String("admin");
-		String userLogin = new String("underadminl");
+		String userLogin = new String("newunderadmin");
+		
 		int packageButtonNumber = 4;
 		DeepRegister.deepRegister(sponsorLogin, userLogin, packageButtonNumber, 5, 0);
 		*/
