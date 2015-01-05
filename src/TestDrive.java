@@ -23,24 +23,33 @@ public class TestDrive {
 		baseUrl = "http://test8.kostyatatar.d.ukrtech.info";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
-
+	
 	@Test
 	public void test() throws Exception {
-		
-		String sponsorLogin = new String("12345newunderadminforkostya");
-		String userLogin = new String("newunderunderadminforkostya");
+		/*
+		String sponsorLogin = new String("12345underadmin");
+		String userLogin = new String("underunderadmin");
 		
 		TestCaseForAddPositonsBonusTest.registerStructure(sponsorLogin, userLogin);
-		
+		*/
 		//ClosePeriod.closePeriods();
 		
 		/*
 		String sponsorLogin = new String("admin");
-		String userLogin = new String("newunderadminforkostya");
+		String userLogin = new String("testbrokenlimitsinmulti");
 		
 		int packageButtonNumber = 4;
 		DeepRegister.deepRegister(sponsorLogin, userLogin, packageButtonNumber, 5, 0);
+		
+		sponsorLogin = "12345" + userLogin;
+		userLogin = "under" + userLogin;
+		
+		TestCaseForAddPositonsBonusTest.registerStructure(sponsorLogin, userLogin);
+		
+		TimeShift.shiftTime(0, 14);
+		//ClosePeriod.closePeriods();
 		*/
+		ClosePeriod.closePeriods();
 	}
 
 	@After
