@@ -19,19 +19,20 @@ public class TestDrive {
 		System.setProperty("webdriver.chrome.driver",
 				"/home/leonid/Public/chromedriver");
 		driver = new ChromeDriver();
-		// baseUrl = "http://test9.kostyatatar.d.ukrtech.info";
+		//baseUrl = "http://globalpractice.eu";
 		baseUrl = "http://test8.kostyatatar.d.ukrtech.info";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
 	@Test
 	public void test() throws Exception {
-		/*
-		String sponsorLogin = new String("12345underadmin");
-		String userLogin = new String("underunderadmin");
 		
-		TestCaseForAddPositonsBonusTest.registerStructure(sponsorLogin, userLogin);
-		*/
+		String sponsorLogin = new String("admin");
+		String userLogin = new String("registereleven");
+		int packageButtonNumber = 0;
+		MonoRegister.monoRegister(sponsorLogin, userLogin, packageButtonNumber);
+		//TestCaseForAddPositonsBonusTest.registerStructure(sponsorLogin, userLogin);
+		
 		//ClosePeriod.closePeriods();
 		
 		/*
@@ -49,7 +50,7 @@ public class TestDrive {
 		TimeShift.shiftTime(0, 14);
 		//ClosePeriod.closePeriods();
 		*/
-		ClosePeriod.closePeriods();
+		//ClosePeriod.closePeriods();
 	}
 
 	@After
